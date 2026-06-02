@@ -7,5 +7,56 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
+}
+
+button:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+a:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+/* src/index.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #0a0a0a;
+}
+
+/* Remove qualquer espaçamento extra */
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Scrollbar personalizada (opcional) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00b4d8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0096b4;
 }
